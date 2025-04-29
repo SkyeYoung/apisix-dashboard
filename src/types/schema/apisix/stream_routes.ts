@@ -29,7 +29,8 @@ const StreamRoute = z
     protocol: StreamRouteProtocol,
   })
   .partial()
-  .merge(A6Common.Basic);
+  .merge(A6Common.Basic)
+  .merge(A6Common.Info);
 
 export const A6StreamRoutes = {
   StreamRoute,

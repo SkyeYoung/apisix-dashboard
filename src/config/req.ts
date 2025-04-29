@@ -24,7 +24,7 @@ req.interceptors.request.use((conf) => {
   return conf;
 });
 
-type A6RespErr = {
+export type A6RespErr = {
   error_msg: string;
 };
 

@@ -21,7 +21,7 @@ export type A6Type = RawA6Type & {
   RespRouteList: AxiosResponse<A6ListResponse<A6Type['Route']>>;
   RespStreamRouteList: AxiosResponse<A6ListResponse<A6Type['StreamRoute']>>;
   RespStreamRouteItem: A6Type['RespStreamRouteList']['data']['list'][number];
-  RespStreamRouteDetail: AxiosResponse<A6DetailResponse<A6Type['StreanRoute']>>;
+  RespStreamRouteDetail: AxiosResponse<A6DetailResponse<A6Type['StreamRoute']>>;
   RespUpstreamList: AxiosResponse<A6ListResponse<A6Type['Upstream']>>;
   RespUpstreamItem: A6Type['RespUpstreamList']['data']['list'][number];
   RespUpstreamDetail: AxiosResponse<A6DetailResponse<A6Type['Upstream']>>;

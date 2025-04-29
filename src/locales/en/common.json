@@ -44,6 +44,9 @@
       "viewPlugin": "View Plugin"
     },
     "search": "Search",
+    "stream_routes": {
+      "remoteAddr": "Remote Addr"
+    },
     "upload": {
       "fileOverSize": "file size is too large",
       "readError": "file read error:"
@@ -163,19 +166,6 @@
       "upstreamHostDesc": "Set this when `pass_host` is `rewrite`"
     }
   },
-  "navbar": {
-    "consumers": "Consumers",
-    "globalRules": "Global Rules",
-    "protos": "Protos",
-    "routes": "Routes",
-    "secrets": "Secrets",
-    "services": "Services",
-    "ssls": "SSLs",
-    "upstreams": "Upstreams",
-    "pluginMetadata": "Plugin Metadata"
-  },
-  "noData": "No Data",
-  "or": "OR",
   "globalRules": {
     "add": {
       "success": "Add Global Rule Successfully",
@@ -191,12 +181,26 @@
     "plugins": "Plugins",
     "title": "Global Rules"
   },
+  "navbar": {
+    "consumers": "Consumers",
+    "globalRules": "Global Rules",
+    "pluginMetadata": "Plugin Metadata",
+    "protos": "Protos",
+    "routes": "Routes",
+    "secrets": "Secrets",
+    "services": "Services",
+    "ssls": "SSLs",
+    "streamRoutes": "Stream Routes",
+    "upstreams": "Upstreams"
+  },
+  "noData": "No Data",
+  "or": "OR",
   "pluginMetadata": {
-    "title": "Plugin Metadata",
     "delete": {
       "success": "Delete Plugin Metadata of {{name}} Successfully"
     },
     "search": "Search Plugin Metadata",
+    "title": "Plugin Metadata",
     "update": {
       "success": "Update Plugin Metadata of {{name}} Successfully"
     }
