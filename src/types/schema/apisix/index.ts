@@ -4,7 +4,7 @@ import { A6GlobalRules } from './global_rules';
 import { A6Protos } from './protos';
 import { A6Routes } from './routes';
 import { A6Upstreams } from './upstreams';
-import { A6PluginMetadata } from './plugin-metadata';
+import { A6PluginMetadata } from './plugin_metadata';
 import { A6StreamRoutes } from './stream_routes';
 export type { A6Type } from './type';
 export const A6 = {

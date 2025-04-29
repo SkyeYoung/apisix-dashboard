@@ -19,7 +19,7 @@ import { Route as ServicesIndexImport } from './routes/services/index'
 import { Route as SecretsIndexImport } from './routes/secrets/index'
 import { Route as RoutesIndexImport } from './routes/routes/index'
 import { Route as ProtosIndexImport } from './routes/protos/index'
-import { Route as PluginMetadataIndexImport } from './routes/plugin-metadata/index'
+import { Route as PluginmetadataIndexImport } from './routes/plugin_metadata/index'
 import { Route as GlobalrulesIndexImport } from './routes/global_rules/index'
 import { Route as ConsumersIndexImport } from './routes/consumers/index'
 import { Route as UpstreamsAddImport } from './routes/upstreams/add'
@@ -80,9 +80,9 @@ const ProtosIndexRoute = ProtosIndexImport.update({
   getParentRoute: () => rootRoute,
 } as any)
 
-const PluginMetadataIndexRoute = PluginMetadataIndexImport.update({
-  id: '/plugin-metadata/',
-  path: '/plugin-metadata/',
+const PluginmetadataIndexRoute = PluginmetadataIndexImport.update({
+  id: '/plugin_metadata/',
+  path: '/plugin_metadata/',
   getParentRoute: () => rootRoute,
 } as any)
 
@@ -193,11 +193,11 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof GlobalrulesIndexImport
       parentRoute: typeof rootRoute
     }
-    '/plugin-metadata/': {
-      id: '/plugin-metadata/'
-      path: '/plugin-metadata'
-      fullPath: '/plugin-metadata'
-      preLoaderRoute: typeof PluginMetadataIndexImport
+    '/plugin_metadata/': {
+      id: '/plugin_metadata/'
+      path: '/plugin_metadata'
+      fullPath: '/plugin_metadata'
+      preLoaderRoute: typeof PluginmetadataIndexImport
       parentRoute: typeof rootRoute
     }
     '/protos/': {
@@ -283,7 +283,7 @@ export interface FileRoutesByFullPath {
   '/upstreams/add': typeof UpstreamsAddRoute
   '/consumers': typeof ConsumersIndexRoute
   '/global_rules': typeof GlobalrulesIndexRoute
-  '/plugin-metadata': typeof PluginMetadataIndexRoute
+  '/plugin_metadata': typeof PluginmetadataIndexRoute
   '/protos': typeof ProtosIndexRoute
   '/routes': typeof RoutesIndexRoute
   '/secrets': typeof SecretsIndexRoute
@@ -304,7 +304,7 @@ export interface FileRoutesByTo {
   '/upstreams/add': typeof UpstreamsAddRoute
   '/consumers': typeof ConsumersIndexRoute
   '/global_rules': typeof GlobalrulesIndexRoute
-  '/plugin-metadata': typeof PluginMetadataIndexRoute
+  '/plugin_metadata': typeof PluginmetadataIndexRoute
   '/protos': typeof ProtosIndexRoute
   '/routes': typeof RoutesIndexRoute
   '/secrets': typeof SecretsIndexRoute
@@ -326,7 +326,7 @@ export interface FileRoutesById {
   '/upstreams/add': typeof UpstreamsAddRoute
   '/consumers/': typeof ConsumersIndexRoute
   '/global_rules/': typeof GlobalrulesIndexRoute
-  '/plugin-metadata/': typeof PluginMetadataIndexRoute
+  '/plugin_metadata/': typeof PluginmetadataIndexRoute
   '/protos/': typeof ProtosIndexRoute
   '/routes/': typeof RoutesIndexRoute
   '/secrets/': typeof SecretsIndexRoute
@@ -349,7 +349,7 @@ export interface FileRouteTypes {
     | '/upstreams/add'
     | '/consumers'
     | '/global_rules'
-    | '/plugin-metadata'
+    | '/plugin_metadata'
     | '/protos'
     | '/routes'
     | '/secrets'
@@ -369,7 +369,7 @@ export interface FileRouteTypes {
     | '/upstreams/add'
     | '/consumers'
     | '/global_rules'
-    | '/plugin-metadata'
+    | '/plugin_metadata'
     | '/protos'
     | '/routes'
     | '/secrets'
@@ -389,7 +389,7 @@ export interface FileRouteTypes {
     | '/upstreams/add'
     | '/consumers/'
     | '/global_rules/'
-    | '/plugin-metadata/'
+    | '/plugin_metadata/'
     | '/protos/'
     | '/routes/'
     | '/secrets/'
@@ -411,7 +411,7 @@ export interface RootRouteChildren {
   UpstreamsAddRoute: typeof UpstreamsAddRoute
   ConsumersIndexRoute: typeof ConsumersIndexRoute
   GlobalrulesIndexRoute: typeof GlobalrulesIndexRoute
-  PluginMetadataIndexRoute: typeof PluginMetadataIndexRoute
+  PluginmetadataIndexRoute: typeof PluginmetadataIndexRoute
   ProtosIndexRoute: typeof ProtosIndexRoute
   RoutesIndexRoute: typeof RoutesIndexRoute
   SecretsIndexRoute: typeof SecretsIndexRoute
@@ -432,7 +432,7 @@ const rootRouteChildren: RootRouteChildren = {
   UpstreamsAddRoute: UpstreamsAddRoute,
   ConsumersIndexRoute: ConsumersIndexRoute,
   GlobalrulesIndexRoute: GlobalrulesIndexRoute,
-  PluginMetadataIndexRoute: PluginMetadataIndexRoute,
+  PluginmetadataIndexRoute: PluginmetadataIndexRoute,
   ProtosIndexRoute: ProtosIndexRoute,
   RoutesIndexRoute: RoutesIndexRoute,
   SecretsIndexRoute: SecretsIndexRoute,
@@ -462,7 +462,7 @@ export const routeTree = rootRoute
         "/upstreams/add",
         "/consumers/",
         "/global_rules/",
-        "/plugin-metadata/",
+        "/plugin_metadata/",
         "/protos/",
         "/routes/",
         "/secrets/",
@@ -496,8 +496,8 @@ export const routeTree = rootRoute
     "/global_rules/": {
       "filePath": "global_rules/index.tsx"
     },
-    "/plugin-metadata/": {
-      "filePath": "plugin-metadata/index.tsx"
+    "/plugin_metadata/": {
+      "filePath": "plugin_metadata/index.tsx"
     },
     "/protos/": {
       "filePath": "protos/index.tsx"
