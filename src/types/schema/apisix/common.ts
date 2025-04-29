@@ -23,6 +23,8 @@ const Timestamp = z.object({
 
 const Info = ID.merge(Timestamp);
 
+const Port = z.number().int().gte(1).lte(65535);
+
 export const A6Common = {
   Basic,
   Labels,
@@ -30,4 +32,5 @@ export const A6Common = {
   ID,
   Timestamp,
   Info,
+  Port,
 };

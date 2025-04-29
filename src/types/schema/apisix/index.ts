@@ -5,11 +5,13 @@ import { A6Protos } from './protos';
 import { A6Routes } from './routes';
 import { A6Upstreams } from './upstreams';
 import { A6PluginMetadata } from './plugin-metadata';
+import { A6StreamRoutes } from './stream_routes';
 export type { A6Type } from './type';
 export const A6 = {
   ...A6Common,
   ...A6Upstreams,
   ...A6Routes,
+  ...A6StreamRoutes,
   ...A6Protos,
   ...A6GlobalRules,
   ...A6Plugins,
