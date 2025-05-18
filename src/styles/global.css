@@ -1,3 +1,8 @@
+@import "@mantine/core/styles.css";
+@import "@mantine/notifications/styles.css";
+@import "tailwind-preset-mantine";
+@import "./shadcn";
+
 .monaco-editor,
 .monaco-editor .overflow-guard {
   border-radius: var(--mantine-radius-sm);

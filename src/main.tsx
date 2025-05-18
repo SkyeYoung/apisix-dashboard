@@ -14,9 +14,8 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-import '@mantine/core/styles.css';
-import '@mantine/notifications/styles.css';
-import './styles/global.css';
+
+import '@/styles/global.css';
 
 import { createTheme, MantineProvider } from '@mantine/core';
 import { ModalsProvider } from '@mantine/modals';

@@ -23,6 +23,7 @@ import UnpluginIcons from 'unplugin-icons/vite';
 import UnpluginInfo from 'unplugin-info/vite';
 import { defineConfig } from 'vite';
 import tsconfigPaths from 'vite-tsconfig-paths';
+import tailwindcss from '@tailwindcss/vite';
 
 import { API_PREFIX, BASE_PATH } from './src/config/constant';
 
@@ -37,6 +38,12 @@ if (inDevContainer) {
 export default defineConfig({
   base: BASE_PATH,
   server: {
+    proxy: {
+      [API_PREFIX]: {
+        target: 'http://localhost:6174',
+        changeOrigin: true,
+      },
+    },
     ...(inDevContainer && {
       host: '0.0.0.0',
       port: 5173,
@@ -70,6 +77,7 @@ export default defineConfig({
     react({
       plugins: [observerPlugin() as never],
     }),
+    tailwindcss(),
   ],
   css: {
     postcss: {
